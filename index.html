@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Movie-Deck</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <h1>Movie Deck</h1>
+        </a>
+    </header>
+    <!-- search bar -->
+    <div class="search-bar">
+        <input type="search" name="search" id="search-input" placeholder="search by name.." autocomplete="off">
+        <button id="search-button">Search</button>
+    </div>
+    <!-- sorting options section -->
+    <div class="sorting-options">
+        <button id="sort-by-date">Sort by date (oldest to latest)</button>
+        <button id="sort-by-rating">Sort by ratings (least to most)</button>
+    </div>
+    <!--  -->
+    <div class="tabs">
+        <button id="all-tab" class="active-tab">All</button>
+        <button id="favourites-tab">Favourites</button>
+    </div>
+    <!-- movie list and pagination section -->
+    <div class="movie-list-pagination-btns">
+        <!-- create a movie list that displays movies in cards -->
+        <ul id="movies-list">
+            <li class="card">
+                <img class="poster" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHNQ8nkN3ys90fo-TeeTk5BBUM6NnGi8KF1vYebGtEkEWgwwqYalBbvZqdCH9NEHFqvkc&usqp=CAU" alt="movie-title">
+                <p class="title">Movie-Title</p>
+                <section class="vote-favouriteIcon">
+                    <section class="vote">
+                        <p class="vote-count">Votes</p>
+                        <p class="vote-average">Rating</p>
+                    </section>
+                    <i class="favourite-icon fa-regular fa-heart fa-2xl"></i>
+                </section>
+            </li>
+            <li class="card">
+                <img class="poster" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHNQ8nkN3ys90fo-TeeTk5BBUM6NnGi8KF1vYebGtEkEWgwwqYalBbvZqdCH9NEHFqvkc&usqp=CAU" alt="movie-title">
+                <p class="title">Movie-Title</p>
+                <section class="vote-favouriteIcon">
+                    <section class="vote">
+                        <p class="vote-count">Votes</p>
+                        <p class="vote-average">Rating</p>
+                    </section>
+                    <i id="favourite-icon" class="fa-regular fa-heart fa-2xl"></i>
+                </section>
+            </li>
+            <li class="card">
+                <img class="poster" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHNQ8nkN3ys90fo-TeeTk5BBUM6NnGi8KF1vYebGtEkEWgwwqYalBbvZqdCH9NEHFqvkc&usqp=CAU" alt="movie-title">
+                <p class="title">Movie-Title</p>
+                <section class="vote-favouriteIcon">
+                    <section class="vote">
+                        <p class="vote-count">Votes</p>
+                        <p class="vote-average">Rating</p>
+                    </section>
+                    <i id="favourite-icon" class="fa-regular fa-heart fa-2xl"></i>
+                </section>
+            </li>
+            <li class="card">
+                <img class="poster" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHNQ8nkN3ys90fo-TeeTk5BBUM6NnGi8KF1vYebGtEkEWgwwqYalBbvZqdCH9NEHFqvkc&usqp=CAU" alt="movie-title">
+                <p class="title">Movie-Title</p>
+                <section class="vote-favouriteIcon">
+                    <section class="vote">
+                        <p class="vote-count">Votes</p>
+                        <p class="vote-average">Rating</p>
+                    </section>
+                    <i id="favourite-icon" class="fa-regular fa-heart fa-2xl"></i>
+                </section>
+            </li>
+            <li class="card">
+                <img class="poster" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHNQ8nkN3ys90fo-TeeTk5BBUM6NnGi8KF1vYebGtEkEWgwwqYalBbvZqdCH9NEHFqvkc&usqp=CAU" alt="movie-title">
+                <p class="title">Movie-Title</p>
+                <section class="vote-favouriteIcon">
+                    <section class="vote">
+                        <p class="vote-count">Votes</p>
+                        <p class="vote-average">Rating</p>
+                    </section>
+                    <i id="favourite-icon" class="fa-regular fa-heart fa-2xl"></i>
+                </section>
+            </li>
+            <li class="card">
+                <img class="poster" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHNQ8nkN3ys90fo-TeeTk5BBUM6NnGi8KF1vYebGtEkEWgwwqYalBbvZqdCH9NEHFqvkc&usqp=CAU" alt="movie-title">
+                <p class="title">Movie-Title</p>
+                <section class="vote-favouriteIcon">
+                    <section class="vote">
+                        <p class="vote-count">Votes</p>
+                        <p class="vote-average">Rating</p>
+                    </section>
+                    <i id="favourite-icon" class="fa-regular fa-heart fa-2xl"></i>
+                </section>
+            </li>
+            <li class="card">
+                <img class="poster" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHNQ8nkN3ys90fo-TeeTk5BBUM6NnGi8KF1vYebGtEkEWgwwqYalBbvZqdCH9NEHFqvkc&usqp=CAU" alt="movie-title">
+                <p class="title">Movie-Title</p>
+                <section class="vote-favouriteIcon">
+                    <section class="vote">
+                        <p class="vote-count">Votes</p>
+                        <p class="vote-average">Rating</p>
+                    </section>
+                    <i id="favourite-icon" class="fa-regular fa-heart fa-2xl"></i>
+                </section>
+            </li>
+            <li class="card">
+                <img class="poster" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHNQ8nkN3ys90fo-TeeTk5BBUM6NnGi8KF1vYebGtEkEWgwwqYalBbvZqdCH9NEHFqvkc&usqp=CAU" alt="movie-title">
+                <p class="title">Movie-Title</p>
+                <section class="vote-favouriteIcon">
+                    <section class="vote">
+                        <p class="vote-count">Votes</p>
+                        <p class="vote-average">Rating</p>
+                    </section>
+                    <i id="favourite-icon" class="fa-regular fa-heart fa-2xl"></i>
+                </section>
+            </li>
+            <li class="card">
+                <img class="poster" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHNQ8nkN3ys90fo-TeeTk5BBUM6NnGi8KF1vYebGtEkEWgwwqYalBbvZqdCH9NEHFqvkc&usqp=CAU" alt="movie-title">
+                <p class="title">Movie-Title</p>
+                <section class="vote-favouriteIcon">
+                    <section class="vote">
+                        <p class="vote-count">Votes</p>
+                        <p class="vote-average">Rating</p>
+                    </section>
+                    <i id="favourite-icon" class="fa-regular fa-heart fa-2xl"></i>
+                </section>
+            </li>
+            <li class="card">
+                <img class="poster" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHNQ8nkN3ys90fo-TeeTk5BBUM6NnGi8KF1vYebGtEkEWgwwqYalBbvZqdCH9NEHFqvkc&usqp=CAU" alt="movie-title">
+                <p class="title">Movie-Title</p>
+                <section class="vote-favouriteIcon">
+                    <section class="vote">
+                        <p class="vote-count">Votes</p>
+                        <p class="vote-average">Rating</p>
+                    </section>
+                    <i id="favourite-icon" class="fa-regular fa-heart fa-2xl"></i>
+                </section>
+            </li>
+        </ul>
+        <div class="pagination">
+            <button id="prev-button">Previous</button>
+            <button id="page-number-button">Current page:1</button>
+            <button id="next-button">Next</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Movie Deck</p>
+    </footer>
+</body>
+
+</html>
